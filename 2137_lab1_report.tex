@@ -1,15 +1,26 @@
 \documentclass[]{report}
 %==========================================================
 %=========== Document Setup  ==============================
-% Formatting defined by class file\documentclass[11pt]{article}
-% ---- Document formatting ----\usepackage[margin=1in]{geometry} 
-% Narrower margins\usepackage{booktabs}                    
-% Nice formatting of tables\usepackage{graphicx}                    
-% Ability to include graphics%\setlength\parindent{0pt}    
-% Do not indent first line of paragraphs \usepackage[parfill]{parskip}     
-% Line space b/w paragraphs% parfill option prevents last line of pgrph from being fully justified
+
+% Formatting defined by class file
+%\documentclass[11pt]{article}
+% ---- Document formatting ----
+\usepackage[margin=1in]{geometry} 
+% Narrower margins
+\usepackage{booktabs}                    
+% Nice formatting of tables
+\usepackage{graphicx}                    
+% Ability to include graphics%
+\setlength\parindent{0pt}    
+% Do not indent first line of paragraphs 
+\usepackage[parfill]{parskip}     
+% Line space b/w paragraphs
+% parfill option prevents last line of pgrph from being fully justified
 % Parskip package adds too much space around titles, fix with this
- \RequirePackage{titlesec}\titlespacing\section{0pt}{8pt plus 4pt minus 2pt}{3pt plus 2pt minus 2pt}\titlespacing\subsection{0pt}{4pt plus 4pt minus 2pt}{-2pt plus 2pt minus 2pt}\titlespacing\subsubsection{0pt}{2pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt} 
+ \RequirePackage{titlesec}
+ \titlespacing\section{0pt}{8pt plus 4pt minus 2pt}{3pt plus 2pt minus 2pt}
+ \titlespacing\subsection{0pt}{4pt plus 4pt minus 2pt}{-2pt plus 2pt minus 2pt}
+ \titlespacing\subsubsection{0pt}{2pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt} 
 % ---- Hyperlinks ----
  \usepackage[colorlinks=true,urlcolor=blue]{hyperref}  
 % For URL's. Automatically links internal references.
@@ -37,54 +48,66 @@
 \newcommand{\Verilog}[2][]{%
 \lstinputlisting[style=Verilog,#1]{#2}
 }
+
 %======================================================
 %=========== Body  ====================================
-
 \begin{document}
+	\title{ELC 2137 Lab 1: Git Latex}
+	\author{Tyler Haygood}
+	
+	\maketitle
+	\section*{Summary}
+		The Purpose of this lab was to familiarize the class with the basics of TeXstudio, and github.
+		We were familiarized with TeXstudio by using a template created by Dr. Miller,
+		which is the same template that will be used across all labs. The Familiarization with gihub was 
+		provided by an in class walkthrough with Professor Hutchins.
+	
+	\section*{Q\&A}
+	
+	\begin{enumerate}
+		\item What is your GitHub user name? \newline
+		TylerMaxwell0713 \newline
+		\item What LaTeX environment produces a bulleted(non-numbered) list? \newline
+		itemize \newline
+		\item Write the equation $\ y(t) = 1/2 e^t $ using La-TeX equation formatting. \newline
+		$\ y(t) = \frac{1}{2} e^t $ \newline
+		\item What is the shortcut key for compiling your La-TeX document? \newline
+		F6 \newline
+	\end{enumerate}
 
-\title{Lab One}
-\author{Tyler Haygood}
-\maketitle
-
-\section{Overview}
-
-\section*{}
-
-\section{Code}
-
-module example
- \newline
-
-(parameter BITS=4) 
-(				   \newline
+	\section*{Results}
+	
+	\begin{figure}[ht]\centering
+			\begin{tabular}{l|rrrr}
+				Time (ns): & 0 & 10 & 20 & 30 \\
+				\midrule
+				a & 0 & 1 & 0 & 1 \\
+				b & 0 & 0 & 1 & 1 \\
+				\midrule
+				c & 0 & 0 & 0 & 1 \\
+				s & 0 & 1 & 1 & 0 \\
+				\bottomrule
+			\end{tabular}\medskip
+		\newline
+		\includegraphics{sim_waveform.png}
+		\caption{Example of a simulation waveform and ERT}
+		\label{fig:sim_with_table}
+	\end{figure}
+	
+	\section*{Code}
+	
+	module example
+	
+	(parameter BITS=4) 
+	(				   \newline
 	input [BITS-1:0] in0, in1, \newline
 	input sel,                 \newline
 	output [BITS-1:0] out      \newline
-);                         \newline
-// Choose in1 or in0       \newline
-out = sel ? in1: in0;      \newline
-	 \newline
-endmodule                     
+	);                         \newline
+	// Choose in1 or in0       \newline
+	out = sel ? in1: in0;      \newline
 
-\section*{}
-
-\section{Questions}
-
-\begin{enumerate}
-	\item What is your GitHub user name? \newline
-	TylerMaxwell0713 \newline
-	\item What LaTeX environment produces a bulleted(non-numbered) list? \newline
-	itemize \newline
-	\item Write the equation $\ y(t) = 1/2 e^t $ using La-TeX equation formatting. \newline
-	$\ y(t) = \frac{1}{2} e^t $ \newline
-	\item What is the shortcut key for compiling your La-TeX document? \newline
-	F6 \newline
-\end{enumerate}
-
-\section*{}
-
-
-
-
-
-\end{document}          
+	endmodule  
+	
+	
+\end{document}       
