@@ -111,3 +111,8 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 dismissDialog("Open Project"); // bx (cp)
 // a (cp): Critical Messages: addNotify
 // HMemoryUtils.trashcanNow. Engine heap size: 777 MB. GUI used memory: 84 MB. Current time: 4/1/20, 5:51:09 PM CDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Tcl Message: update_compile_order -fileset sources_1 
+// D (cp): Invalid Top Module: addNotify
