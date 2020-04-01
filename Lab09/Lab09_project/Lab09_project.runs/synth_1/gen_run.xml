@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585702820">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585713265">
   <File Type="PA-TCL" Name="top_lab9.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_lab9_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_lab9_reports.tcl"/>
@@ -39,12 +39,6 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../../../../../../Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../../../../../../../../Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -76,6 +70,12 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../led.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

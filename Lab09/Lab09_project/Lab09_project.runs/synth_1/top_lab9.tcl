@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -42,9 +43,6 @@ read_verilog -library xil_defaultlib -sv {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc
-set_property used_in_implementation false [get_files C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc]
-
 read_xdc C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc
 set_property used_in_implementation false [get_files C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc]
 
@@ -62,6 +60,9 @@ set_property used_in_implementation false [get_files {{C:/Users/tyler/Desktop/Ba
 
 read_xdc {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/led.xdc}}
 set_property used_in_implementation false [get_files {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/led.xdc}}]
+
+read_xdc C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc
+set_property used_in_implementation false [get_files C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

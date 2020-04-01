@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Mar 31 20:01:54 2020
+| Date             : Tue Mar 31 22:55:47 2020
 | Host             : DESKTOP-2O9T882 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_lab9_power_routed.rpt -pb top_lab9_power_summary_routed.pb -rpx top_lab9_power_routed.rpx
 | Design           : top_lab9
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.077        |
+| Total On-Chip Power (W)  | 0.089        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.006        |
-| Device Static (W)        | 0.070        |
+| Dynamic (W)              | 0.018        |
+| Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
 | Junction Temperature (C) | 25.4         |
@@ -59,9 +59,9 @@ Table of Contents
 |   Register     |    <0.001 |       16 |     41600 |            0.04 |
 |   Others       |     0.000 |        1 |       --- |             --- |
 | Signals        |    <0.001 |       48 |       --- |             --- |
-| I/O            |     0.006 |       32 |       106 |           30.19 |
-| Static Power   |     0.070 |          |           |                 |
-| Total          |     0.077 |          |           |                 |
+| I/O            |     0.017 |       32 |       106 |           30.19 |
+| Static Power   |     0.072 |          |           |                 |
+| Total          |     0.089 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,10 +72,10 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.004 |       0.003 |      0.001 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -140,7 +140,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| top_lab9 |     0.006 |
+| top_lab9 |     0.018 |
 +----------+-----------+
 
 

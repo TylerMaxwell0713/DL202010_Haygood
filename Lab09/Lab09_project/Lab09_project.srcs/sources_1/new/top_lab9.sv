@@ -3,7 +3,7 @@
 module top_lab9(
     input [15:0] sw,
     input btnU, btnD, clk, btnC,
-    output [15:0] LED
+    output [15:0] led
 );
 
 wire [7:0] r1Out, alu1Out, r2Out;
@@ -19,8 +19,8 @@ alu #(.N(8)) alu1 (.in0(Din0), .in1(r1Out), .op(AluOp), .out(alu1Out));
 
 register #(.N(8)) r2 (.D(alu1Out) , .clk(clk) , .en(btnU) , .rst(btnC) , .Q(r2Out));  
 
-assign LED [7:0] = r1Out;
+assign led [7:0] = r1Out;
 
-assign LED [15:8] = r2Out;
+assign led [15:8] = r2Out;
 
 endmodule

@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -74,13 +75,13 @@ set rc [catch {
   set_property ip_output_repo {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/Lab09_project/Lab09_project.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/Lab09_project/Lab09_project.runs/synth_1/top_lab9.dcp}}
-  read_xdc C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc
   read_xdc C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc
   read_xdc {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/btnC.xdc}}
   read_xdc {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/btnD.xdc}}
   read_xdc {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/btnU.xdc}}
   read_xdc {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/clock.xdc}}
   read_xdc {{C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/led.xdc}}
+  read_xdc C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc
   link_design -top top_lab9 -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
