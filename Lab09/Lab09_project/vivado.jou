@@ -10,3 +10,6 @@
 # Journal file: C:/Users/tyler/Documents/GitHub/DL202010_Haygood/Lab09/Lab09_project\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/tyler/Documents/GitHub/DL202010_Haygood/Lab09/Lab09_project/Lab09_project.xpr
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1

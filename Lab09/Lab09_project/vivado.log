@@ -10,3 +10,20 @@
 # Journal file: C:/Users/tyler/Documents/GitHub/DL202010_Haygood/Lab09/Lab09_project\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/tyler/Documents/GitHub/DL202010_Haygood/Lab09/Lab09_project/Lab09_project.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/Lab09_project' since last save.
+WARNING: [Project 1-312] File not found as 'C:/../Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc'; using path 'C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/../Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc'; using path 'C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc' instead.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/tyler/Documents/GitHub/DL202010_Haygood/Lab09/basys3_lab9.sv', nor could it be found using path 'C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/basys3_lab9.sv'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/../Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc'; using path 'C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/../Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc'; using path 'C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/../Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc'; using path 'C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/switches.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/../Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc'; using path 'C:/Users/tyler/Documents/GitHub/DL202010_AVHT/Lab06/sseg.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 744.871 ; gain = 145.406
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
