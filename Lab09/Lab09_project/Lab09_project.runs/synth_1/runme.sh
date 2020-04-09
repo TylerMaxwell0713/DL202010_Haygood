@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/tyler/Desktop/Baylor/Spring/Spring 2020/Digital Logic/Lab/Lab09/Lab09_project/Lab09_project.runs/synth_1'
+HD_PWD='C:/Users/tyler/Documents/GitHub/DL202010_Haygood/Lab09/Lab09_project/Lab09_project.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
